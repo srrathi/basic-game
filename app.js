@@ -5,7 +5,9 @@ function startGame() {
         pump.push(Math.floor(Math.random() * (100)));
     }
     let carPetrol = 30;
-    let petrolPump = pump.sort()
+    let petrolPump = pump.sort(function(a, b) {
+        return a - b;
+    });
     // console.log(petrolPump)
 
     let step
