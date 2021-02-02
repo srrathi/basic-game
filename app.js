@@ -9,7 +9,10 @@ function startGame() {
         return a - b;
     });
     // console.log(petrolPump)
-
+    for(let i=0;i<5;i++){
+        document.querySelector(".game").innerHTML+=`<span>Petrol Pump ${i+1} generated at ${petrolPump[i]}</span><br>`
+    }
+    
     let step
     let totalSteps = 0;
     let i = 1;
